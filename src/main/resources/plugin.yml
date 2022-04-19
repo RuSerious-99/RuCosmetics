@@ -1,0 +1,7 @@
+name: RuCosmetics
+version: '${project.version}'
+main: com.ruseruios99.rucosmetics.RuCosmetics
+api-version: 1.18
+authors: [ RuSerious99 ]
+commands:
+  cosmetics:
