@@ -13,8 +13,8 @@ public class CosmeticMainMenu {
     public CosmeticMainMenu(Player player) {
         Inventory inventory = Bukkit.createInventory(null, 27, ChatColor.DARK_PURPLE + "Cosmetics Main Menu");
 
-        inventory.setItem(0, CreateItemStacks.Skull_Cosmetics);
-        inventory.setItem(1, CreateItemStacks.Trails_Cosmetics);
+        inventory.addItem(CreateItemStacks.createCosmeticSkullMain());
+        inventory.addItem(CreateItemStacks.createCosmeticTrailMain());
 
         player.openInventory(inventory);
     }

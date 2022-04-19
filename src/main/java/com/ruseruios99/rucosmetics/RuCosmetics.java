@@ -17,7 +17,6 @@ public final class RuCosmetics extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        CreateItemStacks.init();
         getCommand("cosmetics").setExecutor(new CosmeticsCommands());
         Bukkit.getPluginManager().registerEvents(new CosmeticsListener(this), this);
     }
